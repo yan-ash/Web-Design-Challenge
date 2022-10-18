@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latitude</title>
+    <title>Comparison</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -16,7 +16,7 @@
     <!-- CSS Link-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
-  <body id="index">
+  <body id="comparison">
     <!-- Navigation Section -->
     <div class="navigation">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -77,38 +77,15 @@
     <!-- Content Section-->
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 col-md-12">
-          <div class="box" style="padding-bottom: 5px">
-            <h3 class="title">Summary: Latitude vs. X</h3>
-            <hr />
-            <img
-              src="assets/images/Fig1.png"
-              class="vizualization rounded float-left"
-              alt="Max Temperature Graph"
-            />
-            <p>
-              The purpose of this project was to analyze how weather changes as
-              you get closer to the equator. To accomplish this analysis, we
-              first pulled data from the OpenWeatherMap API to assemble a
-              dataset on over 500 cities.
-            </p>
-            <p>
-              After assembling the dataset, we used Matplotlib to plot various
-              aspects of the weather vs. latitude. Factors we looked at
-              included: temperature, cloudiness, wind speed, and humidity. This
-              site provides the source data and visualizations created as part
-              of the analysis, as well as explanations and descriptions of any
-              trends and correlations witnessed.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-12">
+        <div>
           <div class="box">
-            <h5 class="title">Visualizations</h5>
+            <h3 class="title">Comparison: Latitude vs. X</h3>
             <hr />
-            <div class="container">
-              <div class="row" style="padding-bottom: 30px">
-                <div class="col-6">
+            <p>Click any graph for more information.</p>
+            <div class="container" style="padding-bottom: 40px">
+              <div class="row">
+                <div class="col-md-6 col-sm-12" style="padding: 30px">
+                  <div class="title">Max Temperature</div>
                   <a href="visualizations/maxTemp.html">
                     <img
                       class="panel"
@@ -117,7 +94,8 @@
                     />
                   </a>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12" style="padding: 30px">
+                  <div class="title">Humidity</div>
                   <a href="visualizations/humidity.html">
                     <img
                       class="panel"
@@ -127,8 +105,9 @@
                   </a>
                 </div>
               </div>
-              <div class="row" style="padding-bottom: 30px">
-                <div class="col-6">
+              <div class="row">
+                <div class="col-md-6 col-sm-12" style="padding: 30px">
+                  <div class="title">Cloudiness</div>
                   <a href="visualizations/cloudiness.html">
                     <img
                       class="panel"
@@ -137,7 +116,8 @@
                     />
                   </a>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12" style="padding: 30px">
+                  <div class="title">Wind Speed</div>
                   <a href="visualizations/windSpeed.html">
                     <img
                       class="panel"

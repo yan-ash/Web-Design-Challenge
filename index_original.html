@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title></title>
     <link
       rel="stylesheet"
@@ -12,7 +15,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-fixed navbar-light bg-light">
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-sm navbar-fixed-top navbar-light">
       <a class="navbar-brand" href="index.html">Latitude</a>
       <button
         class="navbar-toggler"
@@ -26,7 +30,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
         <ul class="navbar-nav ms-auto">
           <!-- <li class="nav-item active">
             <a class="nav-link" href="#"
@@ -49,7 +56,6 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Max Temprature</a>
               <a class="dropdown-item" href="#">Humidity</a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Cloudiness</a>
               <a class="dropdown-item" href="#">Wind Speed</a>
             </div>
@@ -67,195 +73,96 @@
         </ul>
       </div>
     </nav>
-
     <div class="container">
-      <h3 class="text-center">Max Temperature</h3>
       <div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/Fig1.png" alt="..." class="img-thumbnail" />
+        <div class="col-md-8" col-md-12>
+          <div class="box" style="padding-bottom: 5px">
+            <h3 class="title">Summary: Latitude vs. X</h3>
+            <hr />
+            <div class="thumbnail">
+              <img
+                src="assets/images/Fig1.png"
+                alt="Max Temperature Graph"
+                class="img-thumbnail rounded float-left"
+              />
+            </div>
           </div>
           <div class="caption">
-            <h3>Thumbnail label</h3>
             <p>
-              As expected, the weather becomes significantly warmer as one
-              approaches the equator(0 Deg. Lattitude). More interestingly,
-              however, is the fact that the northern hemisphere tends to be
-              warmer this time of year than the southern hemisphere. This maybe
-              due to the tilt of the earth at the time of the year this data was
-              gathered.
+              The purpose of this project was to analyze how weather changes as
+              you get closer to the equator. To accomplish this analysis, we
+              first pulled data from the OpenWeatherMap API to assemble a
+              dataset on over 500 cities.
+            </p>
+            <p>
+              After assembling the dataset, we used Matplotlib to plot various
+              aspects of the weather vs. latitude. Factors we looked at
+              included: temperature, cloudiness, wind speed, and humidity. This
+              site provides the source data and visualizations created as part
+              of the analysis, as well as explanations and descriptions of any
+              trends and correlations witnessed.
             </p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="thumbnail">
-            <img
-              src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"
-              alt="..."
-              class="img-thumbnail"
-            />
-          </div>
+          <h3 class="title">Visualization</h3>
+          <div class="thumbnail"></div>
           <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p>
-              <a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img
-              src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"
-              alt="..."
-              class="img-thumbnail"
-            />
-          </div>
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-            <p>
-              <a href="#" class="btn btn-primary" role="button">Button</a>
-              <a href="#" class="btn btn-default" role="button">Button</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3 class="text-center">List Groups</h3>
-          <ul class="list-group">
-            <li
-              class="list-group-item d-flex justify-content-between align-items-center"
-            >
-              Cras justo odio
-              <span class="badge badge-pill badge-secondary">10</span>
-            </li>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-center"
-            >
-              Cras justo odio
-              <span class="badge badge-pill badge-secondary">3</span>
-            </li>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-center"
-            >
-              Cras justo odio
-              <span class="badge badge-pill badge-secondary">4</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3 class="text-center">Cards</h3>
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    src="assets/images/Fig1.png"
+                    alt="..."
+                    class="img-thumbnail"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    src="assets/images/Fig2.png"
+                    alt="..."
+                    class="img-thumbnail"
+                /></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    src="assets/images/Fig3.png"
+                    alt="..."
+                    class="img-thumbnail"
+                /></a>
+              </div>
+              <div class="col-md-6">
+                <a href="#">
+                  <img
+                    src="assets/images/Fig4.png"
+                    alt="..."
+                    class="img-thumbnail"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3 class="text-center">Nav Tabs</h3>
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3 class="text-center">Nav Pills</h3>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3 class="text-center">Alerts</h3>
-          <div class="alert alert-primary" role="alert">Info Alert</div>
-          <div class="alert alert-success" role="alert">Success Alert</div>
-          <div class="alert alert-danger" role="alert">Danger Alert</div>
-          <div class="alert alert-warning" role="alert">Warning Alert</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3 class="text-center">Progress Bar</h3>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 50%"
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              50%
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="text-center">Buttons</h3>
-      <div class="row">
-        <button type="button" class="btn btn-default">Default Button</button>
-        <button type="button" class="btn btn-primary">Primary Button</button>
-        <button type="button" class="btn btn-danger">Danger Button</button>
-        <button type="button" class="btn btn-info">Info Button</button>
-        <button type="button" class="btn btn-warning">Warning Button</button>
       </div>
     </div>
-
+    <!--Bootstrap JS-->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
   </body>
