@@ -32,8 +32,14 @@
 /* Body*/
 body {
   background-color: #ededed;
+  height: 750px;
+  background-position: center;
+  background-size: cover;
 }
-
+.row {
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
 /* Title Class*/
 .title {
   color: #0bada6;
@@ -52,7 +58,8 @@ p {
 .box {
   margin-top: 60px;
   margin-bottom: 67px;
-  padding: 10px 20px 15px;
+
+  padding: 10px 20px 10px;
   color: black;
   background-color: white;
 }
@@ -95,6 +102,8 @@ footer {
 .table {
   font-size: 15px;
   border-top-color: white;
+  border-left-color: #666666;
+  border-right-color: #666666;
 }
 
 /* Media Queries */
