@@ -12,18 +12,27 @@ Please check my github webpage by clicking on https://yan-ash.github.io/Web-Desi
 
 ---
 
-2. visualisation pages stored in visualisation folder.
+2. maxTemp.html
 
 ---
 
-3. comparison.html contains all the visualisations on the same page.
+3. humidity.html
+   visualisation pages stored in visualisation folder.
 
 ---
 
-4. data.html displays a responsive table containing the data that visualisations use.
+## 4.maxTemp.html
+
+## 5.windspeed.html
+
+6. comparison.html contains all the visualisations on the same page.
+
+---
+
+7. data.html displays a responsive table containing the data that visualisations use.
 
 ## Folder assets includes a CSS file and a image file
 
 ---
 
-## I used folder docs to deploy the website as i had trouble deploy the website.
+## Folder docs including all the files above inside. I used the docs to employ the webpages.
