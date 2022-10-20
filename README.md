@@ -21,9 +21,13 @@ Please check my github webpage by clicking on https://yan-ash.github.io/Web-Desi
 
 ---
 
-## 4.maxTemp.html
+4.maxTemp.html
 
-## 5.windspeed.html
+---
+
+5.windspeed.html
+
+---
 
 6. comparison.html contains all the visualisations on the same page.
 
