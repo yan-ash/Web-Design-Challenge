@@ -12,20 +12,20 @@ Please check my github webpage by clicking on https://yan-ash.github.io/Web-Desi
 
 ---
 
-2. maxTemp.html
+2. maxTemp.html : displays the correlation between latitude and max temperature.  
 
 ---
 
-3. humidity.html
-   visualisation pages stored in visualisation folder.
+3. humidity.html: displays the correlation between latitude and humidity.  
+   
 
 ---
 
-4.maxTemp.html
+4.cloudiness.html: displays the correlation between latitude and cloudiness.  
 
 ---
 
-5.windspeed.html
+5.windspeed.html: displays the correlation between latitude and windspeed.  
 
 ---
 
@@ -34,8 +34,9 @@ Please check my github webpage by clicking on https://yan-ash.github.io/Web-Desi
 ---
 
 7. data.html displays a responsive table containing the data that visualisations use.
+-----
 
-## Folder assets includes a CSS file and a image file
+## Folder assets includes a CSS file and a image file.
 
 ---
 
